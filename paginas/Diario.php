@@ -1,0 +1,119 @@
+<?php 
+
+if (empty($url)) {
+    header("location: ../");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAV-ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon_.ico">
+    <link rel="apple-touch-icon" href="paginas/image/favicon/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="paginas/styles/Diario.css">
+
+    <title>Spiral - Meu Diário</title>
+</head>
+<body>
+    <div class="effect">
+        <div class="response">
+        </div>
+    </div>
+
+    <!-- <div id="navbar"></div> -->
+
+    <div class="contactUs mt-5">
+        <div class="title">
+            <h2>Diário</h2>
+        </div>
+        <div class="box">
+            <!-- Form -->
+            <div class="contact form">
+                <h3>Enviar o texto do Diário </h3>
+                <form action="">
+                    <div class="formBox">
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Título </span>
+                                <input class="form-control" type="text" placeholder="Título" id="titulo">
+                            </div>
+                            <div class="inputBox">
+                                <span>Data </span>
+                                <input class="form-control w-75" type="date" placeholder="DD/MM/AAAA" id="data">
+                            </div>
+                            <div class="inputBox mt-4">
+                                <a href="" id="baixar_diario">Baixar Diário(visualizar)</a>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Texto </span>
+                                <textarea placeholder="Digite o texto do diário aqui..." id="texto"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <input type="submit" id="btnEnviarDiario" name="btnEnviarDiario" value="Enviar">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            
+            <!-- info Box -->
+            <div class="contact info">
+                <h3>Contato da Clínica</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Lorenso Elipticos <br>Indiano</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="#">loremso@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="#">(DD) XXXXX-XXXX</a>
+                    </div>
+                    <!-- Social Media Links -->
+                    <ul class="sci">
+                        <li><a title="facebook" href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a title="twitter" href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a title="linkedin" href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a title="instagram" href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe
+                    title = "Localização da clínica"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.32957394199!2d-44.082131623777286!3d-22.938086438992134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c157c142e8761%3A0xc26823a2db1f5dd5!2sCasa%20do%20neymar!5e0!3m2!1spt-BR!2sbr!4v1693847947625!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>    
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script src="paginas/scripts/jquery/jquery-3.5.1.min.js"></script>
+    <script src="paginas/scripts/Diario.js"></script>
+</body>
+</html>

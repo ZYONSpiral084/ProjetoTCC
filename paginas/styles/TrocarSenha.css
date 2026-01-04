@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,body{
+    background: #6665ee;
+    font-family: 'Poppins', sans-serif;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+body {
+  /* background-image: url("../image/Forgot\ password.gif"); */
+  background-image: url("../image/Forgot\ password2.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 6vw center;
+  background-size: auto;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 1024px)  {
+  body {
+    background-size: 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: #fff;
+  background: #6665ee;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .form {
+  background: #fff;
+  padding: 30px 35px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .form form .form-control {
+  height: 40px;
+  font-size: 15px;
+}
+
+.container .form form .forget-pass {
+  margin: -15px 0 15px 0;
+}
+
+.container .form form .forget-pass a {
+  font-size: 15px;
+}
+
+.container .form form .button {
+  border-radius: 20px;
+  /* border: 1px solid #4bb6b7; */
+  background-color: #4bb6b7;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 8px 80px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+
+.container .form form .button:hover {
+  letter-spacing: 3px;
+}
+
+.container .form form .link {
+  padding: 5px 0;
+}
+
+.container .form form .link a {
+  color: #6665ee;
+}
+
+.container .login-form form p {
+  font-size: 14px;
+}
+
+.container .row .alert {
+  font-size: 14px;
+}
+
+/* ------------- Alterações --------------- */
+.box_1 {
+  position: absolute;
+  top: 10%;
+  left: 20vw;
+  width: 28vw;
+  height: 40vw;
+  background-color: #6bc5e8;
+  border-radius: 5px;
+  transform: rotate(10deg);
+}
+
+.box_2 {
+  position: absolute;
+  top: 10%;
+  left: 40vw;
+  width: 26vw;
+  height: 40vw;
+  background-color: #6bc5e8;
+  border-radius: 5px;
+  transform: rotate(10deg);
+}
+
+.box_3 {
+  position: absolute;
+  top: 10%;
+  left: 60vw;
+  width: 24vw;
+  height: 40vw;
+  background-color: #6bc5e8;
+  border-radius: 5px;
+  transform: rotate(10deg);
+}
+
+.sy_i {
+  position: absolute;
+  font-weight: 700;
+  font-size: 5em;
+  color: white;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sy_i.i1 {
+  left: 30vw;
+  top: 50vh;
+  font-size: 6em;
+  transform: rotate(-20deg);
+}
+
+.sy_i.i2 {
+  left: 70vw;
+  top: 70vh;
+  transform: rotate(10deg);
+}
+
+.sy_i.i3 {
+  font-size: 7em;
+  left: 60vw;
+  top: 15vh;
+}
+
+/* Mensagem do php */
+.effect.on {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(51, 51, 51, 0.7);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  top: 0;
+  left: 0;
+  z-index: 102;
+}
+
+.effect.on .response {
+  background-color: #f0f0f0;
+  position: absolute;
+  text-align: center;
+  border-radius: 8px;
+  /* width: 32%; */
+  height: 15%;
+  top: 34%;
+  /* left: 30%; */
+  z-index: 102;
+  /* padding: 1%; */
+  min-width: 12%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.response h3 {
+  margin-top: 4%;
+  color: #333;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+
+.response .response-message {
+  font-weight: 400;
+  font-size: 15px;
+  text-shadow: none;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 10px 0 30px;
+}

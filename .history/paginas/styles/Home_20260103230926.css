@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reboto', sans-serif;
+}
+
+body{
+    background: #151719;
+}
+
+hr{
+    background: #2c3e50;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mid h1{
+    color: #0d1111;
+    font-weight: 900;
+    letter-spacing: -1.6px;
+}
+
+.mid h1 span{
+    /* color: #5658DD; */
+    color: #82FDFF;
+}
+
+.mid #cliente-nome {
+    font-weight: 700;
+    margin-top: -12px;
+}
+
+.mid p{
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #97A4AE;
+    word-spacing: 1.rem;
+}
+
+.mid .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mid .row button[type="submit"]{
+    /* background: #6163FF; */
+    background: #4bb6b7;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    color: #E7E8EE;
+    margin: 0 0.6rem;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    letter-spacing: 2px;
+}
+  
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+  
+button[type="submit"]:focus {
+    outline: none;
+}
+
+
+.mid .row button:nth-child(2){
+    background: #202226;
+    color: #E7E8EE;
+}
+
+.mid .row button:nth-child(2):hover{
+    background: #0f1216;
+    letter-spacing: 0;
+}
+
+body > header > div > h1.text2{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #900C3F ;
+}
+
+section.features{
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://universo.uniateneu.edu.br/wp-content/uploads/2021/06/brinquedos-criancas-TDAH-1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.features .row .one {
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.features .row .one img{
+    color: #fff;
+    border-radius: 50px;
+}
+
+.features .row .one h3{
+    color: #900C3F;
+    font-weight: 700;
+}
+
+.features .row .one p{
+    color: #97A4AE;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+/* ABOUT - SOBRE TDAH */
+section .item-about-hidden {
+    opacity: 0;
+    transform: translate(-10vw);
+    transition: all 500ms linear;
+}
+
+section .item-about-hidden-v2{
+    opacity: 0;
+    transform: translate(7vw);
+    transition: all 500ms linear;
+}
+
+section .item-about-hidden-off {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.about h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #900C3F;
+}
+
+.about p{
+    color: #97A4AE;
+    font-weight: 400;
+    font-size: 1.3rem;
+    word-spacing: 0.01rem;
+}
+
+@keyframes appear_text {
+    from {
+        transform: translate(-100vw);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+body > section.about > div > div.content > h6{
+    /* color: #5658DD; */
+    color: #4bb6b7;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+body > section.about > div > div.content > h2{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #900C3F;
+}
+
+/* FEEDBACK -  */
+.feedback h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #E7E8EE;
+}
+
+.feedback p{
+    color: #97A4AE;
+    font-weight: 400;
+    font-size: 1.3rem;
+    word-spacing: 0.01rem;
+}
+
+.feedback .frases {
+    min-height: 37vh;
+    border-radius: 17px;
+    /* box-shadow: 0px 0px 10px 5px rgba(40, 40, 40, 0.2); */
+}
+
+.feedback .row div{
+    /* background: #25282C; */
+    background: #4bb6b7;
+    padding: 1rem 1.7rem;
+    color: #fff;
+}
+
+.feedback .row div i{
+    /* color: #4bb6b7; */
+    font-size: 2rem;
+}
+
+.feedback .row div p{
+    /* color: #97A4AE; */
+    color: #ebe1ea;
+    text-shadow: 1px 1px 1px rgba(16, 40, 74, 0.4);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.feedback .row div h4{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #E7E8EE;
+}
+
+.feedback .row div h4 span{
+    /* color: #1CB58A; */
+    /* color: #333; */
+    color:#82FDFF;
+}
+
+section.SocialMidia a {
+    color: #6c757d;
+    transition: all 0.2s linear;
+}
+
+section.SocialMidia a:hover{
+    color: #b85e9d;
+}
+
+/* Mensagem do php */
+.effect.on {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(51, 51, 51, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    top: 0;
+    left: 0;
+    z-index: 102;
+  }
+  
+  .effect.on .response {
+    background-color: #f0f0f0;
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+    /* width: 32%; */
+    top: 34%;
+    /* left: 30%; */
+    z-index: 102;
+    padding: 1%;
+    min-height: 15%;
+    max-height: 20%;
+    max-width: 32%;
+    min-width: 12%;
+  }
+  
+  .response h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: -4px;
+  }
+  
+  .response .response-message {
+    font-weight: 400;
+    font-size: 15px;
+    text-shadow: none;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+  }
+  
+  .response .response-message span {
+    color: #03a9f5;
+  }
+  

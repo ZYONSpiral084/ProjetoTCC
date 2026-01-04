@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --bg: #151719;
+    --muted: #97A4AE;
+    --accent-1: #4bb6b7;
+    --accent-2: #900C3F;
+    --accent-cyan: #82FDFF;
+    --card-bg: #202226;
+    --text-light: #E7E8EE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* corrigi 'Reboto' para 'Roboto' */
+}
+
+body{
+    background: var(--bg);
+    color: var(--text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+hr{
+    background: #2c3e50;
+    height: 1px;
+    border: none;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MID */
+.mid h1{
+    color: #0d1111;
+    font-weight: 900;
+    letter-spacing: -1.6px;
+}
+
+.mid h1 span{
+    color: var(--accent-cyan);
+}
+
+.mid #cliente-nome {
+    font-weight: 700;
+    margin-top: -12px;
+}
+
+.mid p{
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--muted);
+    word-spacing: 1rem; /* corrigi unidade inválida "1.rem" */
+}
+
+.mid .row{
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.mid .row button[type="submit"]{
+    background: var(--accent-1);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    color: var(--text-light);
+    margin: 0 0.6rem;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.mid .row button[type="submit"]:hover {
+    letter-spacing: 2px;
+}
+
+.mid .row button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.mid .row button[type="submit"]:focus {
+    outline: 3px solid rgba(75,182,183,0.25); /* melhor acessibilidade que remover outline */
+    outline-offset: 2px;
+}
+
+.mid .row button:nth-child(2){
+    background: var(--card-bg);
+    color: var(--text-light);
+}
+
+.mid .row button:nth-child(2):hover{
+    background: #0f1216;
+    letter-spacing: 0;
+}
+
+/* header specific */
+body > header > div > h1.text2{
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--accent-2);
+}
+
+/* FEATURES (fundo com imagem) */
+section.features{
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://universo.uniateneu.edu.br/wp-content/uploads/2021/06/brinquedos-criancas-TDAH-1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* cuidado com performance em mobile */
+}
+
+/* animação simples com fallback (evita uso experimental animation-timeline) */
+.features .row .one {
+    animation: appear 0.6s ease-in-out both;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.features .row .one img{
+    display: block;
+    max-width: 100%;
+    border-radius: 12px; /* 50px pode cortar imagens dependendo do layout */
+    object-fit: cover;
+}
+
+.features .row .one h3{
+    color: var(--accent-2);
+    font-weight: 700;
+}
+
+.features .row .one p{
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* ABOUT - SOBRE TDAH */
+section .item-about-hidden {
+    opacity: 0;
+    transform: translateX(-10vw);
+    transition: all 500ms linear;
+}
+
+section .item-about-hidden-v2{
+    opacity: 0;
+    transform: translateX(7vw);
+    transition: all 500ms linear;
+}
+
+section .item-about-hidden-off {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #900C3F;
+}
+
+.about p{
+    color: var(--muted);
+    font-weight: 400;
+    font-size: 1.3rem;
+    word-spacing: 0.01rem;
+}
+
+@keyframes appear_text {
+    from { transform: translateX(-100vw); }
+    to   { transform: translateX(0); }
+}
+
+body > section.about > div > div.content > h6{
+    color: var(--accent-1);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+body > section.about > div > div.content > h2{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--accent-2);
+}
+
+/* FEEDBACK */
+.feedback h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--text-light);
+}
+
+.feedback p{
+    color: var(--muted);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.feedback .frases {
+    min-height: 37vh;
+    border-radius: 17px;
+}
+
+.feedback .row div{
+    background: var(--accent-1);
+    padding: 1rem 1.7rem;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.feedback .row div i{
+    font-size: 2rem;
+}
+
+.feedback .row div p{
+    color: #ebe1ea;
+    text-shadow: 1px 1px 1px rgba(16, 40, 74, 0.4);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.feedback .row div h4{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.feedback .row div h4 span{
+    color: var(--accent-cyan);
+}
+
+/* Social */
+section.SocialMidia a {
+    color: #6c757d;
+    transition: all 0.2s linear;
+}
+
+section.SocialMidia a:hover{
+    color: #b85e9d;
+}
+
+/* Mensagem do php (modal) */
+/* corrigi rgb com alpha para rgba, e centralizei a .response com transform */
+.effect.on {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.effect.on .response {
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    min-height: 15%;
+    max-height: 80vh;
+    max-width: 560px;
+    width: min(90%, 520px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    color: #333;
+}
+
+.response h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 0.25rem;
+}
+
+.response .response-message {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.response .response-message span {
+    color: #03a9f5;
+}
+
+/* --- Forçar cor #900C3F nos títulos que você listou --- */
+section.about h1.text2 {
+    color: #900C3F !important;
+}
+
+section.about .content h2 {
+    color: #900C3F !important;
+}
+
+section.feedback h1.text2 {
+    color: #900C3F !important;
+}

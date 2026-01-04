@@ -1,0 +1,12 @@
+{
+    "name": "vitor/vitor",
+    "autoload": {
+        "psr-4": {
+            "Vitor\\Vitor\\": ""
+        }
+    },
+    "require": {
+        "mpdf/mpdf": "^6.1",
+        "dompdf/dompdf": "^2.0"
+    }
+}

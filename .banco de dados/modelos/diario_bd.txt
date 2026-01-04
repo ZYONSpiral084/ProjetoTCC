@@ -1,0 +1,31 @@
+
+CREATE TABLE Clientes (
+ id_cliente int auto_increment,
+ `nome` varchar(80) not null,
+ id_diario int null,
+ primary key(id_cliente)
+);
+
+-- Criar depois dos Clientes
+CREATE TABLE Diarios (
+ id_diario int auto_increment,
+ id_pagina int not null,
+ `nome_donoDiario` varchar(80) not null,
+ primary key(id_diario)
+);
+
+-- Criar depois dos Diarios
+CREATE TABLE Paginas (
+ id_pagina int auto_increment,
+ numero_pagina int not null default 1,
+ `titulo_pagina` varchar(80) null,
+ `texto_pagina` varchar(500) null,
+ primary key(id_pagina)
+);
+
+ALTER TABLE Clientes
+ADD FOREIGN KEY (id_diario) REFERENCES Diarios(id_diario);
+
+ALTER TABLE Diarios
+ADD FOREIGN KEY (id_pagina) REFERENCES Paginas(id_pagina);
+

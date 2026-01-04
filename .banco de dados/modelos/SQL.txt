@@ -1,0 +1,22 @@
+CREATE DATABASE bd_tcc;
+USE bd_tcc;
+
+CREATE TABLE Clientes (
+    `cpf` varchar(14) not null primary key,
+    `nome` varchar(80) not null,
+    `dataN` date not null,
+    telefone varchar(13) not null,
+    `email` varchar(180) not null unique,
+    senha varchar(255) not null
+);
+
+CREATE TABLE Diarios (
+	id_diarios int auto_increment primary key,
+	`titulo_pagina` varchar(80) not null,
+	`texto_pagina` text not null,
+	numero_pagina int(2) not null default 1,
+	`id_cliente` varchar(14) not null
+);
+
+ALTER TABLE Diarios 
+ADD FOREIGN KEY(id_cliente) REFERENCES Clientes(cpf);
