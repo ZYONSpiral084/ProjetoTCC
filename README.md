@@ -10,11 +10,6 @@
 ## Índice / Table of Contents / 目录
 - [Resumo / Summary / 概要](#resumo--summary--概要)  
 - [Estado rápido / Quick status / 快速状态](#estado-rápido--quick-status--快速状态)  
-- [Estrutura / Repo structure / 仓库结构](#estrutura--repo-structure--仓库结构)  
-- [Execução rápida / Quick local run / 本地快速运行](#execução-rápida--quick-local-run--本地快速运行)  
-- [Correção visual (CSS) / Quick style fix / 样式快速修复](#correção-visual-css--quick-style-fix--样式快速修复)  
-- [Boas práticas / Accessibility & notes / 无障碍与注意事项](#boas-práticas--accessibility--notes--无障碍与注意事项)  
-- [Créditos & Licença / Credits & License / 致谢与许可](#créditos--licença--credits--license--致谢与许可)  
 
 ---
 
